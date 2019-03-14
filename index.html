@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matt Carroll</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav class="navbar-custom navbar navbar-expand-md navbar-lighx navbar-fixed-top">
+            <a class="navbar-brand" href="#">
+                        <img src="assets/mclogoSmall.png" id="navbarlogo">
+            </a>
+            <button id="custom-toggler" class="navbar-toggler navbar navbar-dark" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <!--
+                    <form class="form-inline">
+                        <button class="btn contact-btn btn-sm btn-outline-secondary" type="button">Connect</button>
+                    </form>
+                    -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </nav>
+        <div class="custom-container container h-100">
+            
+            <div class="row bigboxwrapper h-100">
+                <div class="col-sm-6 bigbox">
+                    <div class="card centered elevated" style="width: 18rem;">
+                        <div class="card-header">
+                            <div class="image-cropper">
+                                <img src="assets/me.png" class="img-circle">
+                            </div>
+                            <div class="center-text">
+                                <h1 class="card-title">Matt Carroll</h1>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item btn btn-primary btn-block dark-light">Work Experience</li>
+                            <li class="list-group-item btn btn-primary btn-block dark-light" style="margin:0;">Education</li>
+                            <li class="list-group-item btn btn-primary btn-block dark-light" style="margin:0; border-top:0;">Skills</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 bigbox colored">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 id="topic-title">Work Experience</h2>
+                        </div>
+                    </div>    
+                    <div class="row .card-columns">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/klaviyo.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Klaviyo</h4>
+                                    <p class="card-text">Intern - <i>Summer 2017</i></p>
+                                    <a href="#" class="btn btn-primary btn-block">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/eli_whitney.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Eli Whitney Museum</h4>
+                                    <p class="card-text">Senior Apprentice - <i>Fall 2013 to Present</i></p>
+                                    <a href="#" class="btn btn-primary btn-block">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
