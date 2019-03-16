@@ -9,8 +9,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         
         <script src="main.js"></script>
@@ -41,14 +40,15 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 contact-col">
-                        <a href="https://www.linkedin.com/in/matt-w-carroll" class="fa fa-linkedin"></a>
-                        <a href="https://github.com/mattcar15" class="fa fa-github"></a>
-                        <a href="index.html" class="fa fa-share"></a>
+                    <a href="https://www.linkedin.com/in/matt-w-carroll" class="fab fa-linkedin-in"></a>
+                    <a href="https://github.com/mattcar15" class="fab fa-github"></a>
+                    <a href = "" class="fas fa-envelope" data-toggle="modal" data-target="#emailModal"></a>
+                    <a href = "" class="fas fa-share"  data-toggle="modal" data-target="#shareModal"></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 contact-col">
-                    <h1>... or contact me</h1>
+                    <h1>... or message me</h1>
                 </div>         
             </div>
             <div class="row">
@@ -65,13 +65,55 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                     </form>
                 </div>  
                 <div class="col-sm-2"></div>
             </div>
-            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="emailModalLabel">Send me an email</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" value="mwcarroll12@gmail.com" id="emailInput" readonly>
+                                        <div class="input-group-append">
+                                            <button data-toggle="tooltip" onclick="copyToClipboard('emailInput')" class="btn btn-outline-secondary icon fas fa-copy copyToClip" title="copied"  type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="shareModalLabel">Share my site</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" value="https://mattcar15.gihub.io" id="shareInput" readonly>
+                                        <div class="input-group-append">
+                                            <button data-toggle="tooltip" onclick="copyToClipboard('shareInput')" class="btn btn-outline-secondary icon fas fa-copy copyToClip" title="copied"  type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                                    
+            </div>
         </div>
     </body>
 </html>
